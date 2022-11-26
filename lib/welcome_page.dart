@@ -1,16 +1,15 @@
-// ignore_for_file: prefer_const_constructors
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SplashPage extends StatefulWidget {
-  const SplashPage({super.key});
+class WelcomePageRoleUser extends StatefulWidget {
+  const WelcomePageRoleUser({super.key});
 
   @override
-  State<SplashPage> createState() => _SplashPageState();
+  State<WelcomePageRoleUser> createState() => _WelcomePageRoleUserState();
 }
 
-class _SplashPageState extends State<SplashPage> {
+class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +18,7 @@ class _SplashPageState extends State<SplashPage> {
           children: [
             Container(
               width: double.infinity,
-              height: MediaQuery.of(context).size.height * 0.60,
+              height: MediaQuery.of(context).size.height * 0.65,
               decoration: BoxDecoration(
                 color: Color(0xFF0C4EB3),
                 border: Border.all(
