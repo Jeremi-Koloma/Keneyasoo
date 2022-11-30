@@ -54,7 +54,8 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
                     Padding(
                       padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                       child: Text(
-                        'KénéyaSo est une application dédiée aux consultations en ligne. Une plateforme où les patients pourront se connecter, prendre des renseignements en temps réel'.                        style: GoogleFonts.poppins(
+                        'KénéyaSo est une application dédiée aux consultations en ligne. Une plateforme où les patients pourront se connecter, prendre des renseignements en temps réel',
+                        style: GoogleFonts.poppins(
                           color: Colors.white,
                         ),
                         textAlign: TextAlign.center,
