@@ -19,24 +19,26 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
             Container(
               width: double.infinity,
               height: MediaQuery.of(context).size.height * 0.65,
-              decoration: BoxDecoration(
-                color: Color(0xFF0C4EB3),
-                border: Border.all(
-                  color: Color(0xFF0C4EB3),
-                ),
+              decoration: const BoxDecoration(
+                //color: const Color(0xFF0C4EB3),
+                gradient: LinearGradient(colors: [
+                  Color.fromARGB(250, 1, 13, 85),
+                  Color.fromARGB(248, 2, 37, 77),
+                  Color.fromARGB(255, 7, 127, 41)
+                ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
                 borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(30),
-                    bottomRight: Radius.circular(30)),
+                    bottomLeft: Radius.circular(35),
+                    bottomRight: Radius.circular(35)),
               ),
               child: Column(mainAxisAlignment: MainAxisAlignment.center,
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.favorite_outline_outlined,
                       color: Colors.white,
                       size: 150,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Text(
@@ -46,14 +48,13 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
                           color: Colors.white,
                           fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(
-                      height: 10,
+                    const SizedBox(
+                      height: 15,
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                       child: Text(
-                        'KénéyaSo est une application dédiée aux consultations en ligne. Une plateforme oû les patients pourront se connecter, prendre des renseignement en temps réel.',
-                        style: GoogleFonts.poppins(
+                        'KénéyaSo est une application dédiée aux consultations en ligne. Une plateforme où les patients pourront se connecter, prendre des renseignements en temps réel'.                        style: GoogleFonts.poppins(
                           color: Colors.white,
                         ),
                         textAlign: TextAlign.center,
@@ -61,6 +62,66 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
                     ),
                   ]),
             ),
+            const SizedBox(
+              height: 30,
+            ),
+            Text(
+              'Bienvenue',
+              style: GoogleFonts.glory(
+                fontSize: 50.0,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const Text(
+              'Ravi de vous revoir ! Merci de choisir une option',
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(
+              height: 25,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: GestureDetector(
+                child: Container(
+                  padding: const EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                      color: const Color(0xFF0C4EB3),
+                      borderRadius: BorderRadius.circular(12)),
+                  child: Center(
+                      child: Text(
+                    'PATIENT',
+                    style: GoogleFonts.poppins(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  )),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: GestureDetector(
+                child: Container(
+                  padding: const EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 51, 171, 85),
+                      borderRadius: BorderRadius.circular(12)),
+                  child: Center(
+                      child: Text(
+                    'MEDECIN',
+                    style: GoogleFonts.poppins(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  )),
+                ),
+              ),
+            )
           ],
         ),
       ),
