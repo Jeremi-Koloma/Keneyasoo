@@ -22,9 +22,10 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
               decoration: const BoxDecoration(
                 //color: const Color(0xFF0C4EB3),
                 gradient: LinearGradient(colors: [
-                  Color.fromARGB(250, 1, 13, 85),
-                  Color.fromARGB(248, 2, 37, 77),
-                  Color.fromARGB(255, 7, 127, 41)
+                  Color.fromARGB(255, 2, 47, 115),
+                  Color.fromARGB(248, 2, 50, 112),
+                  Color.fromARGB(248, 2, 96, 66),
+                  Color.fromARGB(255, 51, 171, 85)
                 ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(35),
@@ -38,8 +39,8 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
                       color: Colors.white,
                       size: 150,
                     ),
-                    const SizedBox(
-                      height: 10,
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.02,
                     ),
                     Text(
                       'Keneyaso',
@@ -48,8 +49,8 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
                           color: Colors.white,
                           fontWeight: FontWeight.bold),
                     ),
-                    const SizedBox(
-                      height: 15,
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.02,
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 10.0, right: 10.0),
@@ -63,8 +64,8 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
                     ),
                   ]),
             ),
-            const SizedBox(
-              height: 30,
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.01,
             ),
             Text(
               'Bienvenue',
@@ -77,8 +78,8 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
               'Ravi de vous revoir ! Merci de choisir une option',
               textAlign: TextAlign.center,
             ),
-            const SizedBox(
-              height: 25,
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.02,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -93,15 +94,15 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
                     'PATIENT',
                     style: GoogleFonts.poppins(
                       color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w500,
                       fontSize: 18,
                     ),
                   )),
                 ),
               ),
             ),
-            const SizedBox(
-              height: 15,
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.01,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -116,7 +117,7 @@ class _WelcomePageRoleUserState extends State<WelcomePageRoleUser> {
                     'MEDECIN',
                     style: GoogleFonts.poppins(
                       color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w500,
                       fontSize: 18,
                     ),
                   )),
